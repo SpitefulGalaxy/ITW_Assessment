@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITW Assessment</title>
+    <style>
+        .navbar {
+        
+        	position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 30px;
+        	margin-top: 0px;
+            background-color: #3b769e;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end; /* Align all buttons to the right */
+            align-items: center; /* Center items vertically */
+        }
+
+        .navbar a {
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .navbar a::before {
+            content: "|"; /* Adds the vertical bar separator */
+            color: white;
+            position: absolute;
+            right: 100%; /* Places the separator to the left of the button */
+            margin-right: 0px; /* Adds space between the separator and the button */
+            height: 100%;
+            line-height: 20px; /* Centers the separator vertically */
+        }
+
+        .navbar a:first-child::before {
+            content: ""; /* No separator before the first button */
+        }
+
+        .title {
+            font-size: 48px; /* This makes the text larger */
+            text-align: center; /* This centers the text */
+            margin-top: 50px; /* This adds space above the title */
+            font-weight: bold; /* This makes the text bold*/
+            /*font-family: 'ariel', sans-serif; /* Font family */
+        }
+
+        .vertical-bar {
+            position: fixed;
+            left: 225px;
+            top: 100;
+            width: 50%;
+            height: 8%;
+            background-color: #d1d1d1; /* Bar color */
+            z-index: -1;  /* Ensures it stays behind other content */
+        }
+        
+        .vertical-bar2 {
+            position: fixed;
+            left: 212px;
+            top: 43px;
+            width: 53%;
+            height: 10%;
+            background-color: #525252; /* Bar color */
+            z-index: -1;  /* Ensures it stays behind other content */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="vertical-bar2"></div>
+    <div class="vertical-bar"></div>
+
+
+    <!-- Navigation bar with buttons aligned to the right -->
+    <div class="navbar">
+    	<a href="menu.html">Menu</a>
+        <a href="plan.html">Plan</a>
+    </div>
+
+    <!-- Main content of the index page -->
+    <h1 class="title">ITW Assessment</h1>
+    <p>main page content.</p>
+</body>
+</html>
